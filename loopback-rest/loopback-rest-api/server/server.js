@@ -36,5 +36,4 @@ console.log(Object.keys(app.models));
 
 app.models.User.afterRemote('create', (ctx, next) => {
   console.log(ctx);
-  next();
 });
