@@ -1,0 +1,32 @@
+{
+  "name": "Profiles",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "First_Name": {
+      "type": "string"
+    },
+    "Last_Name": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "Birthdate": {
+      "type": "date"
+    },
+    "Age": {
+      "type": "number"
+    },
+    "History": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
