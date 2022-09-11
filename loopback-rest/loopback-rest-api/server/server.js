@@ -34,6 +34,6 @@ boot(app, __dirname, function (err) {
 
 console.log(Object.keys(app.models));
 
-app.models.User.afterRemote('create', (ctx, next) => {
-  console.log(ctx);
+app.models.User.afterRemote('create', (ctx, user, next) => {
+  console.log(ctx.instance);
 });
