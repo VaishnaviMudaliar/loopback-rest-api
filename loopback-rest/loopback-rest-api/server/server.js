@@ -49,7 +49,7 @@ app.models.User.afterRemote('create', (ctx, user, next) => {
       } else {
         console.log('there is an error', err);
       }
-    }
-  );
-  next();
+      next();
+    });
+ 
 });
